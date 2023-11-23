@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKECAR</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <div class="background-image">
-        <img src="bugatti.jpg" alt="Bugatti">
-        <img src="gtr.jpg" alt="GTR">
-        <img src="mercedes.jpg" alt="Mercedes">
+        <img src="image/bugatti.jpg" alt="Bugatti">
+        <img src="image/gtr.jpg" alt="GTR">
+        <img src="image/mercedes.jpg" alt="Mercedes">
         <header>
             <div id="logo"></div>
             <h1>POKECAR</h1>
@@ -20,6 +21,44 @@
             <div class="arrow"></div>
         </div>
     </div>
+    <section>
+        <h2>Voiture à la une</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                    <div>
+                        <h2>Subaru Impreza WRX</h2>
+                        <a href="#">explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                    <div>
+                        <h2>Nissan Skyline GT-R</h2>
+                        <a href="#">explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--three">
+                    <div>
+                        <h2>Jaguar XJ13</h2>
+                        <a href="#">explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--four">
+                    <div>
+                        <h2>Nissan 370Z NISMO</h2>
+                        <a href="#">explore</a>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide--five">
+                    <div>
+                        <h2>Porsche 911</h2>
+                        <a href="#">explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
     <main>
         <section class="car-space">
             <div class="car-widget" onclick="navigateToCarPage('car1')">
@@ -34,5 +73,7 @@
             <!-- Ajoutez 6 autres car-widgets ici -->
         </section>
     </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>

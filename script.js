@@ -1,5 +1,25 @@
 function navigateToCarPage(carId) {
-    // Remplacez 'car1', 'car2', 'car3' par les identifiants réels de vos voitures
-    // Naviguez vers la page de la voiture concernée
     window.location.href = 'car-page.html?id=' + carId;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        speed: 600,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 3,
+            slideShadows: true,
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+});

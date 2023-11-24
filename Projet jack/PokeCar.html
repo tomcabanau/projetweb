@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title> PokeCar </title>
+    <link href="file.css" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Druzhok&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+</head>
+<body> 
+    <header>
+        <h1> PokeCar </h1>
+        <div class="logo">
+            <img src="image/PokeCar.png" alt="logo PokeCar">
+        </div>
+    </header>
+    
+    <script>
+        window.onscroll = function() {
+            const logo = document.getElementById("header-logo");
+            const headerText = document.getElementById("header-text");
+            const scrollPos = window.scrollY;
+
+            // Réduit la taille de l'image et du texte lorsque vous faites défiler vers le bas
+            logo.style.height = `${200 - scrollPos * 0.5}px`; // Ajustez les valeurs selon vos besoins
+            headerText.style.fontSize = `${3 - scrollPos * 0.01}em`; // Ajustez les valeurs selon vos besoins
+        }
+    </script>
+
+<section>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--one">
+          <div>
+            <h2>Subaru Impreza WRX</h2>
+            <a>explore</a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--two">
+          <div>
+            <h2>Nissan Skyline GT-R</h2>
+            <a>explore</a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--three">
+          <div>
+            <h2>Jaguar XJ13</h2>
+            <a>explore</a>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--four">
+          <div>
+            <h2>Nissan 370Z NISMO</h2>
+            <a>explore</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide--five">
+          <div>
+            <h2>Porsche 911</h2>
+            <a>explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

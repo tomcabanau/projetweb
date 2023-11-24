@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Druzhok';
+    font-family:'Druzhok';
     src: url("fonts/DRUZHOK.otf"); }
 body {
     margin: 0;
     padding: 0;
-    font-family: "Druzhok", sans-serif;
+    
 }
 
 .background-image {
@@ -58,6 +58,7 @@ header {
 
 h1 {
     color: #fff;
+    font-family: "Druzhok", sans-serif;
     font-size: 2em;
 }
 

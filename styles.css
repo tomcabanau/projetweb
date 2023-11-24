@@ -1,7 +1,9 @@
 @font-face {
     font-family:'Druzhok';
     src: url("fonts/DRUZHOK.otf"); }
+
 body {
+    background-color: black;    
     margin: 0;
     padding: 0;
     
@@ -236,4 +238,10 @@ section a {
 .swiper-container {
     width: 100%;
     height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 0 20px;
+    }
+
 }

@@ -244,7 +244,12 @@ section a {
 }
 
 @media only screen and (max-width: 48em) {
-    section {
-        padding: 0 1.25em;
+    .swiper-slide {
+        height: 20em; /* Ajustez la hauteur pour les écrans plus petits */
+        padding: 2em; /* Ajustez l'espacement interne pour les écrans plus petits */
+    }
+
+    .swiper-pagination {
+        bottom: 1.5em !important; /* Ajustez la position de la pagination pour les écrans plus petits */
     }
 }

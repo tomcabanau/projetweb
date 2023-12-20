@@ -41,7 +41,7 @@ body {
     }
 }
 
-header {
+header { /*logo POKECAR*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,7 +101,7 @@ h3 {
 
 .car-space {
     padding: 1.25%;
-    background-color: #f4f4f4;
+    background-color: #000000;
     overflow: hidden;
 }
 
@@ -137,15 +137,16 @@ main {
     font-family: "Euclid Circular A", "Poppins";
 }
 
+
 section {
     position: relative;
     display: flex;
     align-items: center;
     gap: 3.125%;
     padding: 0 3.125%;
-    min-height: 25vh;
+    min-height: 25%;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 2 auto;
 }
 
 section a {
@@ -154,10 +155,10 @@ section a {
     text-transform: uppercase;
     color: #717171;
     font-weight: 500;
-    background: #fff;
+    background: #ffffff;
     border-radius: 3.125rem;
     margin: 0 auto;
-    padding: 0.375em 1.625em;
+    padding: 0 3.125%;
     font-size: 0.9em;
     transition: 0.3s ease-in-out;
     position: absolute;

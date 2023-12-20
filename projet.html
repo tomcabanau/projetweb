@@ -21,7 +21,7 @@
             <div class="arrow"></div>
         </div>
     </div>
-    <h2>Voiture à la une</h2>
+    <h2>Voiture a la une</h2>
     <section>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -59,38 +59,63 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <div>
-        <input type="text" placeholder="Recherche">
+    <div class="recherche-bt">
+        <input type="text" placeholder="Recherche" oninput="searchCar(this.value)">
     </div>
-    <main>
-        <section class="car-space">
-            <div class="car-widget" onclick="navigateToCarPage('car1')">
-                <img src="image/Supra.jpg" alt="Car 1">
-            </div>
-            <div class="car-widget" onclick="navigateToCarPage('car2')">
-                <img src="image/bugatti.jpg" alt="Car 2">
-            </div>
-            <div class="car-widget" onclick="navigateToCarPage('car3')">
-                <img src="image/Porsche911.jpg" alt="Car 3">
-            </div>
-        </section>
-        <section class="car-space">
-            <div class="car-widget" onclick="navigateToCarPage('car1')">
-                <img src="image/Supra.jpg" alt="Car 1">
-            </div>
-            <div class="car-widget" onclick="navigateToCarPage('car2')">
-                <img src="image/bugatti.jpg" alt="Car 2">
-            </div>
-            <div class="car-widget" onclick="navigateToCarPage('car3')">
-                <img src="image/Porsche911.jpg" alt="Car 3">
-            </div>
-        </section>
-    </main>
+    <section class="car-space" id="carSpace">
+        <div class="car-widget" data-car-id="car1" onclick="navigateToCarPage('supra')">
+            <img src="image/Supra.jpg" alt="supra">
+        </div>
+        <div class="car-widget" data-car-id="car2" onclick="navigateToCarPage('car2')">
+            <img src="image/bugatti.jpg" alt="Car 2">
+        </div>
+        <div class="car-widget" data-car-id="car3" onclick="navigateToCarPage('car3')">
+            <img src="image/Porsche911.jpg" alt="Car 3">
+        </div>
+        <div class="car-widget" data-car-id="car4" onclick="navigateToCarPage('car4')">
+            <img src="image/Supra.jpg" alt="Car 4">
+        </div>
+        <div class="car-widget" data-car-id="car5" onclick="navigateToCarPage('car5')">
+            <img src="image/bugatti.jpg" alt="Car 5">
+        </div>
+        <div class="car-widget" data-car-id="car6" onclick="navigateToCarPage('car6')">
+            <img src="image/Porsche911.jpg" alt="Car 6">
+        </div>
+        <div class="car-widget" data-car-id="car7" onclick="navigateToCarPage('car7')">
+            <img src="image/Supra.jpg" alt="Car 7">
+        </div>
+        <div class="car-widget" data-car-id="car8" onclick="navigateToCarPage('car8')">
+            <img src="image/bugatti.jpg" alt="Car 8">
+        </div>
+        <div class="car-widget" data-car-id="car9" onclick="navigateToCarPage('car9')">
+            <img src="image/Porsche911.jpg" alt="Car 9">
+        </div>
+    </section>
     <div class="footer">
         <a href="contact.html"><button>Contact</button></a>
         <a href="savoirplus.html"><button>En savoir plus</button></a>
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        function navigateToCarPage(carId) {
+            // Ajoutez ici le code pour naviguer vers la page de la voiture spécifiée
+            console.log("Naviguer vers la voiture avec l'identifiant:", carId);
+        }
+        function searchCar(searchTerm) {
+            // Obtenez tous les widgets de voiture
+            const carWidgets = document.querySelectorAll('.car-widget');
+            // Parcourez chaque widget de voiture pour trouver la correspondance
+            carWidgets.forEach(widget => {
+                const carId = widget.getAttribute('data-car-id');
+                const carName = widget.querySelector('img').alt.toLowerCase();
+                // Vérifiez si le terme de recherche correspond au nom de la voiture
+                if (carName.includes(searchTerm.toLowerCase())) {
+                    // Ajoutez ici le code pour mettre en surbrillance ou sélectionner la voiture
+                    console.log("Voiture trouvée:", carName);
+                }
+            });
+        }
+    </script>
 </body>
 </html>

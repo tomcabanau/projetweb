@@ -1,5 +1,7 @@
 function navigateToCarPage(carId) {
-    window.location.href = 'car-page.html?id=' + carId;
+    var carWidget = document.querySelector(`.car-widget[data-car-id="${carId}"]`);
+    var link = carWidget.getAttribute('data-link');
+    window.location.href = link;
 }
 
 document.addEventListener('DOMContentLoaded', function () {

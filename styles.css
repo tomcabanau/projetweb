@@ -13,19 +13,17 @@ body {
 }
 .slide{
     width:100%;
-    height: 100%;
+    height:100%;
+    object-fit: cover;
+    animation: scrollImages 30s linear infinite
 }
 /*images de fond*/
 .background-image {
     display: flex;
-    height: 100%;
     overflow: hidden;
     position: relative;
 }
-.background-image img {
-    object-fit: cover;
-    animation: scrollImages 30s linear infinite;
-}
+
 /*déffillement des images de fonds*/
 @keyframes scrollImages {
     0%, 100% {
@@ -48,18 +46,14 @@ body {
 /*logo POKECAR*/
 header { 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
 }
 #logo {
-    width: 1%;
-    height: 5%;
-    background: url('image/PokeCar.png') no-repeat;
-    background-size: cover;
-    display: inline-block;
+    width: 10%;
+    height: 10%;
+    height: auto;
+    margin-top: 20%;
 }
 
 /*Grand titre*/
@@ -76,7 +70,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     font-family: "Druzhok", sans-serif;
-    font-size: 100%;
+    font-size: 150%;
     text-align: center;
     color: #fff;
 }
@@ -84,7 +78,7 @@ h1 {
     border: solid #fff;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     transform: rotate(45deg);
     bottom: 10%;
 }
@@ -92,7 +86,7 @@ h1 {
 /*titre voiture a la une*/
 h2 {
     text-align: center;
-    margin-top: 2%;
+    margin-top: 10%;
     font-family: "Druzhok", sans-serif;
     font-size: 150%;
     color: #ffffff;
@@ -117,7 +111,7 @@ h3 {
 
 /*interface des widgets*/
 .car-space {
-    margin-top: 50%;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -298,27 +292,27 @@ section a {
 
 .swiper-slide--one {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Subaru_Impreza_WRX.jpg") no-repeat 50% 50% / cover;
+      url("image/Subaru Impreza WRX.jpg") no-repeat 50% 50% / cover;
     background-position: center;
 }
 
 .swiper-slide--two {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Nissan_Skyline_GT-Rjpg.jpg") no-repeat 50% 50% / cover;
+      url("image/Nissan Skyline GTR.jpg") no-repeat 50% 50% / cover;
     background-position: center;
 }
 
 .swiper-slide--three {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Jaguar_XJ13.jpg") no-repeat 50% 50% / cover;
+      url("image/ferrari 812 superfast.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Nissan_370Z_NISMO.jpg") no-repeat 50% 50% / cover;
+      url("image/Nissan 370Z NISMO.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Porsche911.jpg") no-repeat 50% 50% / cover;
+      url("image/porsche 911.jpg") no-repeat 50% 50% / cover;
 }

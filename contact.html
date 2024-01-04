@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poke Car "We're Ready to Listen" Contact Us</title>
-    <link href="styles contact/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <form action="#">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <label for="email">Email</label>
+    <header>
+        <h1>Contactez-nous</h1>
+    </header>
+    <section>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            <div class="terms">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">I accept the terms</label>
-            </div>
-            <button type="submit">Submit</button>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
         </form>
-    </div>
+    </section>
+    <section>
+        <button><a href="#">Bouton 1</a></button>
+        <button><a href="#">Bouton 2</a></button>
+        <button><a href="#">Bouton 3</a></button>
+    </section>
 </body>
 </html>

@@ -1,0 +1,18 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+}
+
+/* Add custom styles for your text image if needed */

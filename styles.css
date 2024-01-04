@@ -100,14 +100,49 @@ h3 {
     color: #ffffff;
 }
 
+
+
+
+
+
 /*recherche*/
-.recherche-bt {
-    text-align: center;
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
-    font-family: "Druzhok", sans-serif;
-    font-size: 150%;
-    color: #ffffff;
+    margin-bottom: 20%;
 }
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+}
+.search-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+/* Effet de survol sur le bouton */
+.search-button:hover {
+    background-color: #3d3d3d;
+}
+
+
+
+
+
+
+
+
 
 /*interface des widgets*/
 .car-space {
@@ -153,10 +188,12 @@ main {
     font-family: "Euclid Circular A", "Poppins";
 }
 
-/* Ajoutez ce style dans votre fichier de style (styles.css) */
-.highlighted {
-    background-color: rgb(199, 0, 0); /* ou toute autre style que vous souhaitez pour la surbrillance */
+/* Ajoutez un style pour la classe de surbrillance */
+.highlighted-widget {
+    border: 2px solid rgb(87, 22, 22); /* ou toute autre mise en surbrillance que vous préférez */
 }
+
+
 
 
 

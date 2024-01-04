@@ -2,10 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKECAR</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>   
     <div class="background-image">
@@ -59,9 +62,11 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <div class="recherche-bt">
-        <input type="text" placeholder="Recherche" oninput="searchCar(this.value)">
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Recherche" id="searchInput">
+        <button class="search-button" onclick="searchCar()">&#128269;</button>
     </div>
+    </section>
     <section class="car-space" id="carSpace">
         <div class="car-widget" data-car-id="supra mk4" data-link="voiture/supra_mk4.html" onclick="navigateToCarPage('supra mk4')">
             <img src="image/supra mk4.jpg" alt="supra mk4">
@@ -75,19 +80,19 @@
         <div class="car-widget" data-car-id="ferrari 812 superfast" data-link="voiture/ferrari812.html" onclick="navigateToCarPage('ferrari 812 superfast')">
             <img src="image/ferrari 812 superfast.jpg" alt="ferrari 812 superfast">
         </div>
-        <div class="car-widget" data-car-id="Nissan Skyline GTR" data-link="voiture/skyline_gtr.html" onclick="navigateToCarPage('Nissan Skyline GTR')">
+        <div class="car-widget" data-car-id="nissan skyline gtr" data-link="voiture/skyline_gtr.html" onclick="navigateToCarPage('nissan Skyline GTR')">
             <img src="image/Nissan Skyline GTR.jpg" alt="Nissan Skyline GTR">
         </div>
-        <div class="car-widget" data-car-id="car6" data-link="voiture/mercedes_amg.html" onclick="navigateToCarPage('car6')">
-            <img src="image/Mercedes AMG GT .jpg" alt="Car 6">
+        <div class="car-widget" data-car-id="mercedes amg " data-link="voiture/mercedes_amg.html" onclick="navigateToCarPage('car6')">
+            <img src="image/Mercedes AMG GT .jpg" alt="mercedes amg">
         </div>
-        <div class="car-widget" data-car-id="Nissan 370Z NISMO" data-link="voiture/370z_nismo.html" onclick="navigateToCarPage('Nissan 370Z NISMO')">
+        <div class="car-widget" data-car-id="nissan 370z nismo" data-link="voiture/370z_nismo.html" onclick="navigateToCarPage('Nissan 370Z NISMO')">
             <img src="image/Nissan 370Z NISMO.jpg" alt="Nissan 370Z NISMO">
         </div>
-        <div class="car-widget" data-car-id="Maserati" data-link="voiture/maserati.html" onclick="navigateToCarPage('Maserati')">
+        <div class="car-widget" data-car-id="maserati" data-link="voiture/maserati.html" onclick="navigateToCarPage('Maserati')">
             <img src="image/Maserati GranTurismo.jpg" alt="Maserati">
         </div>
-        <div class="car-widget" data-car-id="Subaru Impreza WRX" data-link="voiture/subaru.html" onclick="navigateToCarPage('Subaru Impreza WRX')">
+        <div class="car-widget" data-car-id="subaru impreza wrx" data-link="voiture/subaru.html" onclick="navigateToCarPage('Subaru Impreza WRX')">
             <img src="image/Subaru Impreza WRX.jpg" alt="Subaru Impreza WRX">
         </div>
     </section>
@@ -95,8 +100,5 @@
         <a href="contact.html"><button>Contact</button></a>
         <a href="savoirplus.html"><button>En savoir plus</button></a>
     </div>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
 </body>
 </html>

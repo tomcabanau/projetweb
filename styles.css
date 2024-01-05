@@ -1,8 +1,10 @@
+/* Déclaration de la police personnalisée */
 @font-face {
     font-family: 'Druzhok';
     src: url("fonts/DRUZHOK.otf");
 }
 
+/* Style global pour le corps de la page */
 body {
     width: 100%;
     height: 100%;
@@ -14,19 +16,22 @@ body {
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-.slide{
-    width:100%;
-    height:100%;
+/* Styles pour la section de défilement des images en plein écran */
+.slide {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    animation: scrollImages 30s linear infinite
+    animation: scrollImages 30s linear infinite;
 }
-/*images de fond*/
+
+/* Styles pour les images de fond */
 .background-image {
     display: flex;
     overflow: hidden;
     position: relative;
 }
-/*déffillement des images de fonds*/
+
+/* Animation de défilement des images de fond */
 @keyframes scrollImages {
     0%, 100% {
         transform: translateX(0%);
@@ -47,12 +52,14 @@ body {
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-/*logo POKECAR*/
-header { 
+/* Styles pour l'en-tête contenant le logo, le titre principal et la flèche de défilement */
+header {
     position: absolute;
     text-align: center;
     z-index: 1;
 }
+
+/* Style du logo */
 #logo {
     width: 10%;
     height: 10%;
@@ -60,14 +67,14 @@ header {
     margin-top: 20%;
 }
 
-/*Grand titre*/
+/* Style du titre principal */
 h1 {
     color: #fff;
     font-family: "Druzhok", sans-serif;
     font-size: 300%;
 }
 
-/*fleche scroll down*/
+/* Style de la flèche de défilement */
 .scroll-down {
     position: absolute;
     bottom: 10%;
@@ -78,15 +85,10 @@ h1 {
     text-align: center;
     color: #fff;
 }
-.arrow {
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
-    transform: rotate(45deg);
-    bottom: 10%;
-}
-/*titre voiture a la une*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Styles pour le sous-titre "Voiture à la une" */
 h2 {
     text-align: center;
     margin-top: 10%;
@@ -95,9 +97,19 @@ h2 {
     color: #ffffff;
 }
 
+/* Styles pour la flèche de défilement vers le bas */
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    bottom: 10%;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-/*recherche*/
+/* Styles pour la section de recherche */
 .search-container {
     position: relative;
     display: flex;
@@ -107,6 +119,8 @@ h2 {
     margin-bottom: 5%;
     z-index: 2;
 }
+
+/* Styles pour la barre de recherche */
 .search-input {
     padding: 10px;
     font-size: 16px;
@@ -115,6 +129,8 @@ h2 {
     outline: none;
     width: 70%;
 }
+
+/* Styles pour le bouton de recherche */
 .search-button {
     background-color: #000000;
     color: #fff;
@@ -125,31 +141,37 @@ h2 {
     font-size: 16px;
     outline: none;
 }
-/* Effet de survol sur le bouton */
+
+/* Effet de survol sur le bouton de recherche */
 .search-button:hover {
     background-color: #3d3d3d;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
+/* Styles pour la section de particules en arrière-plan */
 .particles-section {
     position: relative;
     min-height: 100vh;
-    z-index: 1; 
+    z-index: 1;
 }
+
+/* Styles pour les particules */
 #particles-js {
     position: absolute;
     width: 3000px;
     height: 3000px;
-    z-index: -1; 
+    z-index: -1;
 }
+
+/* Ajustement de la position des particules */
 #particles-js.bottom-start {
-    top: calc(100% - 200px); 
+    top: calc(100% - 200px);
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-/*interface des widgets*/
+/* Styles pour l'interface des widgets de voiture */
 .car-space {
     display: flex;
     flex-wrap: wrap;
@@ -158,6 +180,8 @@ h2 {
     background-color: rgba(0, 0, 0, 0.0);
     overflow: hidden;
 }
+
+/* Styles pour un widget de voiture individuel */
 .car-widget {
     width: 30%;
     margin: 0.625%;
@@ -165,10 +189,13 @@ h2 {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
+
+/* Effet de survol sur un widget de voiture */
 .car-widget:hover {
     transform: scale(1.05);
 }
-/*image des widgets*/
+
+/* Style de l'image à l'intérieur des widgets */
 .car-widget img {
     width: 100%;
     height: 100%;
@@ -176,16 +203,21 @@ h2 {
     border: 1px solid #000000;
     border-radius: 0.3125%;
 }
+
+/* Styles pour la section principale de la page */
 main {
     padding: 1.25%;
     background-color: #000000;
 }
+
+/* Styles globaux pour la page */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Euclid Circular A", "Poppins";
 }
+
 /* Ajoutez un style pour la classe de surbrillance */
 .highlighted-widget {
     border: 5px solid rgb(77, 95, 255); /* ou toute autre mise en surbrillance que vous préférez */
@@ -193,13 +225,15 @@ main {
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
-/*nom des voitures du swiper*/
+/* Styles pour le nom des voitures du swiper */
 h3 {
     text-align: center;
     margin-top: 1%;
     font-size: 100%;
     color: #ffffff;
 }
+
+/* Styles pour la section du swiper contenant les voitures */
 section {
     position: relative;
     display: flex;
@@ -210,14 +244,15 @@ section {
     max-width: 100%;
     margin: 2 auto;
 }
-/*bouton explore*/
+
+/* Styles pour le bouton "Explore" dans la section du swiper */
 section a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ad0f0f;               /*couleur texte explore*/
+    color: #ad0f0f; /*couleur texte explore*/
     font-weight: 500;
-    background: #ffffff;         /*couleur bouton explore*/
+    background: #ffffff; /*couleur bouton explore*/
     border-radius: 3.125rem;
     margin: 0 auto;
     padding: 0 3.125%;
@@ -227,17 +262,25 @@ section a {
     bottom: 1.25em;
     left: 1.25em;
 }
+
+/* Styles pour le conteneur du swiper */
 .swiper {
     width: 100%;
 }
+
+/* Styles pour les points de pagination du swiper */
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
     background: #fff;
 }
+
+/* Styles pour la pagination du swiper */
 .swiper-pagination {
     bottom: 2.125% !important;
     transform: scale(1.3);
 }
+
+/* Styles pour chaque diapositive du swiper */
 .swiper-slide {
     height: 31.25%;
     display: flex;
@@ -247,6 +290,8 @@ section a {
     padding: 9.375%;
     filter: grayscale(0.6);
 }
+
+/* Styles pour le titre des voitures dans les diapositives du swiper */
 .swiper-slide h2 {
     color: #fff;
     font-weight: 400;
@@ -257,63 +302,80 @@ section a {
     position: absolute;
     top: 0;
 }
+
+/* Effet de survol sur les liens dans les diapositives du swiper */
 .swiper-slide a:hover {
     color: #005baa;
 }
+
+/* Styles pour l'élément div dans les diapositives du swiper */
 .swiper-slide div {
     transition: 0.25s;
     opacity: 0;
 }
+
+/* Styles pour l'élément div actif dans les diapositives du swiper */
 .swiper-slide-active div {
     opacity: 1;
 }
+
+/* Styles pour les ombres de gauche et de droite dans le mode 3D du swiper */
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
 }
+
+/* Styles pour le conteneur du swiper */
 .swiper-container {
     width: 100%;
     height: 100%;
 }
+
+/* Media query pour les écrans plus petits (max-width: 48em) */
 @media only screen and (max-width: 48em) {
+    /* Ajustements pour les écrans plus petits */
     .swiper-slide {
         height: 2%; /* Ajustez la hauteur pour les écrans plus petits */
         padding: 8%; /* Ajustez l'espacement interne pour les écrans plus petits */
     }
 
     .swiper-pagination {
-        bottom: 1.5% ; /* Ajustez la position de la pagination pour les écrans plus petits */
+        bottom: 1.5%; /* Ajustez la position de la pagination pour les écrans plus petits */
+        transform: scale(1.3);
     }
 }
+
+/* Styles pour chaque diapositive du swiper avec des images spécifiques */
 .swiper-slide--one {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Subaru Impreza WRX.jpg") no-repeat 50% 50% / cover;
+        url("image/Subaru Impreza WRX.jpg") no-repeat 50% 50% / cover;
     background-position: center;
 }
 
 .swiper-slide--two {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Nissan Skyline GTR.jpg") no-repeat 50% 50% / cover;
+        url("image/Nissan Skyline GTR.jpg") no-repeat 50% 50% / cover;
     background-position: center;
 }
 
 .swiper-slide--three {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/ferrari 812 superfast.jpg") no-repeat 50% 50% / cover;
+        url("image/ferrari 812 superfast.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/Nissan 370Z NISMO.jpg") no-repeat 50% 50% / cover;
+        url("image/Nissan 370Z NISMO.jpg") no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("image/porsche 911.jpg") no-repeat 50% 50% / cover;
+        url("image/porsche 911.jpg") no-repeat 50% 50% / cover;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
+/* Styles pour la barre de navigation en haut de la page */
 .navbar {
     background-color: #000;
     overflow: hidden;
@@ -323,6 +385,8 @@ section a {
     z-index: 1000;
     text-align: center;
 }
+
+/* Styles pour les liens de la barre de navigation */
 .navbar a {
     float: left;
     display: block;
@@ -332,10 +396,14 @@ section a {
     text-decoration: none;
     font-size: 18px;
 }
+
+/* Styles pour les liens de la barre de navigation au survol */
 .navbar a:hover {
     background-color: #ddd;
     color: #000;
 }
+
+/* Styles pour les boutons de la barre de navigation */
 .navbar button {
     background-color: #000;
     border: none;
@@ -350,17 +418,23 @@ section a {
     transition-duration: 0.3s;
     border-radius: 5px;
 }
+
+/* Styles pour les boutons de la barre de navigation au survol */
 .navbar button:hover {
     background-color: #ddd;
     color: #000;
 }
+
+/* Ajustement de la marge du dernier bouton de la barre de navigation */
 .navbar button:last-child {
     margin-bottom: 20px; /* Vous pouvez ajuster cette valeur selon votre préférence */
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
+/* Media query pour les écrans plus petits (max-width: 768px) */
 @media only screen and (max-width: 768px) {
+    /* Ajustements pour les écrans plus petits */
     body {
         width: 100%;
         height: 100%;

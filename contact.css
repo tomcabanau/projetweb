@@ -1,79 +1,91 @@
+/* Déclaration de la police personnalisée */
 @font-face {
     font-family: 'Druzhok';
     src: url("fonts/DRUZHOK.otf");
 }
 
+/* Style global pour le corps de la page */
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Druzhok", sans-serif;
-    margin: 0;
+    background-color: #000; /* Couleur de fond noire */
+    color: #fff; /* Couleur du texte blanc */
+    font-family: "Druzhok", sans-serif; /* Police de caractères principale */
+    margin: 0; /* Annule les marges par défaut du corps */
 }
 
+/* Style de l'en-tête de la page */
 header {
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #fff; /* Couleur de fond blanche */
+    color: #000; /* Couleur du texte noir */
+    padding: 10px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Centrer le texte dans l'en-tête */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    align-items: center; /* Alignement vertical au centre des éléments enfants */
+    justify-content: space-between; /* Espace équitable entre les éléments enfants */
 }
 
+/* Styles pour les logos à gauche et à droite dans l'en-tête */
 #logo-left, #logo-right {
-    max-width: 50px; /* Ajustez la taille du logo selon vos besoins */
-    margin: 0 10px; /* Marge pour séparer le logo du titre */
+    max-width: 50px; /* Largeur maximale des logos */
+    margin: 0 10px; /* Marge autour des logos */
 }
 
+/* Style pour le titre principal */
 h1 {
-    flex-grow: 1;
-    margin: 0;
+    flex-grow: 1; /* Permet au titre de prendre autant d'espace que possible */
+    margin: 0; /* Annule les marges par défaut du titre */
 }
 
+/* Styles pour les sections de la page */
 section {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 20px; /* Marge autour des sections */
+    display: flex; /* Utilisation de flexbox pour les sections */
+    flex-direction: column; /* Alignement des éléments en colonne */
+    align-items: center; /* Centrer les éléments des sections */
 }
 
+/* Styles pour le formulaire */
 form {
-    display: grid;
-    gap: 15px;
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: grid; /* Utilisation de la grille pour organiser les éléments du formulaire */
+    gap: 15px; /* Espacement entre les éléments du formulaire */
+    background-color: #fff; /* Couleur de fond blanche du formulaire */
+    color: #000; /* Couleur du texte noir dans le formulaire */
+    padding: 20px; /* Espacement intérieur du formulaire */
+    border-radius: 10px; /* Bordure arrondie du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre autour du formulaire */
 }
 
+/* Style pour les libellés du formulaire */
 label {
-    font-weight: bold;
+    font-weight: bold; /* Police en gras pour les libellés */
 }
 
+/* Styles pour les champs de saisie et la zone de texte du formulaire */
 input, textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #000;
-    border-radius: 5px;
+    width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
+    padding: 10px; /* Espacement interne des champs de saisie */
+    box-sizing: border-box; /* Boîte de modèle incluant la bordure et le rembourrage */
+    border: 1px solid #000; /* Bordure de 1 pixel solide noire */
+    border-radius: 5px; /* Bordure arrondie des champs de saisie */
 }
 
+/* Styles pour le bouton du formulaire */
 button {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #000000; /* Couleur de fond noire du bouton */
+    color: #ffffff; /* Couleur du texte blanc du bouton */
+    padding: 10px; /* Espacement interne du bouton */
+    border: none; /* Pas de bordure pour le bouton */
+    cursor: pointer; /* Curseur pointeur pour indiquer la cliquabilité */
+    border-radius: 5px; /* Bordure arrondie du bouton */
 }
 
+/* Styles pour les liens dans le bouton */
 button a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none; /* Pas de soulignement pour les liens dans le bouton */
+    color: #fff; /* Couleur du texte blanc pour les liens dans le bouton */
 }
 
+/* Styles pour les images dans le bouton */
 button img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Largeur de l'image de 100% */
+    height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
 }

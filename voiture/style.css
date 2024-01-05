@@ -1,72 +1,84 @@
+/* Style global pour le corps de la page */
 body {
-    background-color: #232323;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 0;
+    background-color: #232323; /* Couleur de fond du corps */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Arial', sans-serif; /* Police de caractères principale */
+    text-align: center; /* Alignement du texte au centre */
+    margin: 0; /* Annule les marges par défaut du corps */
 }
 
+/* Styles pour la containerisation du contenu */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
 }
 
+/* Styles pour l'en-tête de la page */
 header {
-    background-color: #333;
-    padding: 20px 0;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    padding: 20px 0; /* Espacement intérieur de l'en-tête */
 }
 
+/* Styles pour le titre de l'en-tête */
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    margin: 0; /* Annule les marges par défaut du titre */
+    font-size: 2.5em; /* Taille du titre */
 }
 
+/* Styles pour la navigation */
 nav {
-    background-color: #444;
-    padding: 10px 0;
+    background-color: #444; /* Couleur de fond de la navigation */
+    padding: 10px 0; /* Espacement intérieur de la navigation */
 }
 
+/* Styles pour le logo */
 #logo {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
+    width: 100px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique pour maintenir les proportions du logo */
+    cursor: pointer; /* Curseur pointeur pour indiquer la cliquabilité */
 }
 
+/* Styles pour la section principale */
 main {
-    padding: 20px 0;
+    padding: 20px 0; /* Espacement intérieur de la section principale */
 }
 
+/* Styles pour les détails de la voiture */
 #car-details {
-    text-align: center;
+    text-align: center; /* Alignement du texte au centre */
 }
 
+/* Styles pour l'image de la voiture */
 #voiture {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Largeur de 100% pour occuper toute la largeur disponible */
+    max-width: 600px; /* Largeur maximale de l'image de la voiture */
+    height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
+    border-radius: 8px; /* Bordure arrondie de l'image de la voiture */
 }
 
+/* Styles pour la zone de texte */
 #text-zone {
-    width: 70%;
-    margin: 20px auto;
-    padding: 20px;
-    color: #000000;
-    background-color: #f5f5f5;
-    border-radius: 10px;
+    width: 70%; /* Largeur de 70% */
+    margin: 20px auto; /* Marge autour de la zone de texte, centrée horizontalement */
+    padding: 20px; /* Espacement intérieur de la zone de texte */
+    color: #000000; /* Couleur du texte de la zone de texte */
+    background-color: #f5f5f5; /* Couleur de fond de la zone de texte */
+    border-radius: 10px; /* Bordure arrondie de la zone de texte */
 }
 
+/* Styles pour le bouton "Meilleur Prix" */
 .meilleur-prix-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #c01818;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-top: 20px;
+    display: inline-block; /* Affichage en tant que bloc en ligne */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    background-color: #c01818; /* Couleur de fond du bouton */
+    color: #ffffff; /* Couleur du texte du bouton */
+    text-decoration: none; /* Pas de soulignement pour le texte du bouton */
+    border-radius: 5px; /* Bordure arrondie du bouton */
+    font-size: 1.2em; /* Taille de la police du bouton */
+    margin-top: 20px; /* Marge en haut du bouton */
 }
 
+/* Styles pour l'effet de survol du bouton "Meilleur Prix" */
 .meilleur-prix-button:hover {
-    background-color: #666564;
+    background-color: #666564; /* Nouvelle couleur de fond lors du survol */
 }

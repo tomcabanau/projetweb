@@ -1,57 +1,66 @@
+/* Déclaration de la police personnalisée */
 @font-face {
     font-family: 'Druzhok';
     src: url("fonts/DRUZHOK.otf");
 }
 
+/* Style global pour le corps de la page */
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Druzhok", sans-serif;
-    margin: 0;
+    background-color: #000; /* Couleur de fond noire */
+    color: #fff; /* Couleur du texte blanc */
+    font-family: "Druzhok", sans-serif; /* Police de caractères principale */
+    margin: 0; /* Annule les marges par défaut du corps */
 }
 
+/* Style de l'en-tête de la page */
 header {
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #fff; /* Couleur de fond blanche */
+    color: #000; /* Couleur du texte noir */
+    padding: 10px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Centrer le texte dans l'en-tête */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    align-items: center; /* Alignement vertical au centre des éléments enfants */
+    justify-content: space-between; /* Espace équitable entre les éléments enfants */
 }
 
+/* Styles pour les logos à gauche et à droite dans l'en-tête */
 #logo-left, #logo-right {
-    max-width: 50px;
-    margin: 0 10px;
+    max-width: 50px; /* Largeur maximale des logos */
+    margin: 0 10px; /* Marge autour des logos */
 }
 
+/* Styles pour les sections de la page */
 section {
-    margin: 20px;
+    margin: 20px; /* Marge autour des sections */
 }
 
+/* Styles pour le conteneur du logo Pokecar */
 .pokecar-container {
-    text-align: center;
-    position: relative;
+    text-align: center; /* Centrer le texte dans le conteneur */
+    position: relative; /* Position relative pour positionner les éléments enfants */
 }
 
+/* Styles pour l'image Pokecar */
 .pokecar-image {
     max-width: 100%; /* Pour rendre l'image responsive */
-    opacity: 0.1;
+    opacity: 0.1; /* Opacité de l'image */
 }
 
+/* Styles pour le texte Pokecar */
 .pokecar-text {
-    font-family: 'Courier New', Courier, monospace;
-    color: #ffffff; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace; /* Police monospace pour le texte */
+    color: #ffffff; /* Couleur du texte blanc */
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 50%; /* Position verticale au centre */
+    left: 50%; /* Position horizontale au centre */
+    transform: translate(-50%, -50%); /* Centrer le texte avec transform */
+    font-size: 3vw; /* Taille de police responsive basée sur la largeur de la vue */
+    
     @media (min-width: 768px) {
         font-size: 30px; /* Taille maximale de la police pour les écrans plus larges */
     }
+    
     @media (min-width: 1024px) {
         font-size: 40px; /* Taille maximale de la police pour les écrans encore plus larges */
     }
-    
 }

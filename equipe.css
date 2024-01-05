@@ -1,72 +1,92 @@
+/* Déclaration de la police personnalisée */
 @font-face {
     font-family: 'Druzhok';
     src: url("fonts/DRUZHOK.otf");
 }
+
+/* Style global pour le corps de la page */
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: "Druzhok", sans-serif;
-    margin: 0;
+    background-color: #000; /* Couleur de fond noire */
+    color: #fff; /* Couleur du texte blanc */
+    font-family: "Druzhok", sans-serif; /* Police de caractères principale */
+    margin: 0; /* Annule les marges par défaut du corps */
 }
+
+/* Style de l'en-tête de la page */
 header {
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #fff; /* Couleur de fond blanche */
+    color: #000; /* Couleur du texte noir */
+    padding: 10px; /* Espacement intérieur de l'en-tête */
+    text-align: center; /* Centrer le texte dans l'en-tête */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    align-items: center; /* Alignement vertical au centre des éléments enfants */
+    justify-content: space-between; /* Espace équitable entre les éléments enfants */
 }
+
+/* Styles pour les logos à gauche et à droite dans l'en-tête */
 #logo-left, #logo-right {
-    max-width: 50px; /* Ajustez la taille du logo selon vos besoins */
-    margin: 0 10px; /* Marge pour séparer le logo du titre */
+    max-width: 50px; /* Largeur maximale des logos */
+    margin: 0 10px; /* Marge autour des logos */
 }
+
+/* Styles pour les sections de la page */
 section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0 20px;
-    border-radius: 10px;
+    display: flex; /* Utilisation de flexbox pour les sections */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: space-around; /* Espace équitable entre les éléments */
+    font-family: 'Courier New', Courier, monospace; /* Police monospace pour les sections */
+    padding: 0 20px; /* Marge intérieure des sections */
+    border-radius: 10px; /* Bordure arrondie des sections */
 }
+
+/* Styles pour chaque membre de l'équipe */
 .team-member {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
+    background-color: #ffffff; /* Couleur de fond blanche pour chaque membre */
+    color: #000000; /* Couleur du texte noir pour chaque membre */
+    padding: 20px; /* Espacement intérieur de chaque membre */
+    margin: 10px; /* Marge autour de chaque membre */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments du membre */
+    align-items: center; /* Alignement vertical au centre des éléments du membre */
+    border-radius: 10px; /* Bordure arrondie pour chaque membre */
 }
+
+/* Styles pour les images des membres de l'équipe */
 .team-member img {
-    max-width: 100%;
-    margin-right: 5%;
-    margin-left: 5%;
-    border-radius: 50%;
+    max-width: 100%; /* Pour rendre l'image responsive */
+    margin-right: 5%; /* Marge à droite de l'image */
+    margin-left: 5%; /* Marge à gauche de l'image */
+    border-radius: 50%; /* Bordure arrondie pour l'image */
 }
+
+/* Styles pour la partie de texte des membres de l'équipe */
 .team-member div {
-    flex-grow: 1;
+    flex-grow: 1; /* Permet à la partie de texte de prendre autant d'espace que possible */
 }
 
 /* Ajoutez des media queries pour le rendu responsive */
 @media screen and (max-width: 768px) {
+    /* Ajustements pour les écrans plus petits */
+
     section {
-        align-items: center; /* Centrer les éléments */
-        padding: 10px;
+        align-items: center; /* Centrer les éléments des sections */
+        padding: 10px; /* Marge intérieure réduite pour les sections */
     }
+
     .team-member {
         width: 100%; /* Prendre toute la largeur de l'écran */
-        text-align: left;
-        margin: 10px 0;
-        padding: 15px;
+        text-align: left; /* Aligner le texte à gauche sur les petits écrans */
+        margin: 10px 0; /* Marge autour de chaque membre réduite */
+        padding: 15px; /* Espacement intérieur réduit pour chaque membre */
     }
+
     .team-member img {
         max-width: 50%; /* Ajuster la largeur de l'image à 100% de la largeur du parent */
-        margin-right: 0;
-        margin-left: 0; /* Supprimer la marge entre l'image et le texte */
+        margin-right: 0; /* Supprimer la marge à droite de l'image */
+        margin-left: 0; /* Supprimer la marge à gauche de l'image */
     }
+
     .team-member h2 {
-        font-size: 1.2em; /* Ajuster la taille de la police pour les titres des rubriques sur les petits écrans */
+        font-size: 1.2em; /* Ajuster la taille de la police pour les titres des membres sur les petits écrans */
     }
 
     .team-member ul {

@@ -357,3 +357,92 @@ section a {
 .navbar button:last-child {
     margin-bottom: 20px; /* Vous pouvez ajuster cette valeur selon votre préférence */
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .background-image {
+        height: auto;
+    }
+
+    header {
+        position: relative;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    #logo {
+        width: 50%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    .scroll-down {
+        bottom: 5%;
+    }
+
+    h2 {
+        margin-top: 5%;
+    }
+
+    .search-container {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        margin-top: 2%;
+        border-radius: 5px;
+    }
+
+    .car-space {
+        justify-content: center;
+    }
+
+    .car-widget {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    section {
+        padding: 5%;
+    }
+
+    section a {
+        position: static;
+        margin-top: 2%;
+        left: auto;
+        bottom: auto;
+        transform: none;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .navbar button {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}

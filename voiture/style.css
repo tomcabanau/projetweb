@@ -55,3 +55,18 @@ main {
     background-color: #f5f5f5;
     border-radius: 10px;
 }
+
+.meilleur-prix-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c01818;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.meilleur-prix-button:hover {
+    background-color: #666564;
+}

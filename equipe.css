@@ -29,7 +29,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .team-member {
@@ -48,4 +48,24 @@ section {
 
 .team-member div {
     flex-grow: 1;
+}
+
+/* Ajoutez des media queries pour le rendu responsive */
+
+@media screen and (max-width: 20000px) {
+    section {
+        flex-direction: column; /* Afficher les membres de l'équipe en colonne */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .team-member {
+        width: 90%; /* Prendre toute la largeur de l'écran */
+        text-align: left;
+    }
+
+    .team-member img {
+        max-width: 100%; /* Ajuster la largeur de l'image à 100% de la largeur du parent */
+        margin-right: 5%; /* Supprimer la marge entre l'image et le texte */
+        margin-bottom: 10px; /* Ajouter une marge en bas pour l'espace */
+    }
 }

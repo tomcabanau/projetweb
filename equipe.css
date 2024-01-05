@@ -2,14 +2,12 @@
     font-family: 'Druzhok';
     src: url("fonts/DRUZHOK.otf");
 }
-
 body {
     background-color: #000;
     color: #fff;
     font-family: "Druzhok", sans-serif;
     margin: 0;
 }
-
 header {
     background-color: #fff;
     color: #000;
@@ -19,12 +17,10 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 #logo-left, #logo-right {
     max-width: 50px; /* Ajustez la taille du logo selon vos besoins */
     margin: 0 10px; /* Marge pour séparer le logo du titre */
 }
-
 section {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +29,6 @@ section {
     padding: 0 20px;
     border-radius: 10px;
 }
-
 .team-member {
     background-color: #ffffff;
     color: #000000;
@@ -43,35 +38,38 @@ section {
     align-items: center;
     border-radius: 10px;
 }
-
 .team-member img {
     max-width: 100%;
     margin-right: 5%;
     margin-left: 5%;
     border-radius: 50%;
 }
-
 .team-member div {
     flex-grow: 1;
 }
 
 /* Ajoutez des media queries pour le rendu responsive */
-
 @media screen and (max-width: 768px) {
     section {
         align-items: center; /* Centrer les éléments */
+        padding: 10px;
     }
-
     .team-member {
         width: 100%; /* Prendre toute la largeur de l'écran */
         text-align: left;
-        margin: 10px;
-        padding: 20px;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .team-member img {
+        max-width: 50%; /* Ajuster la largeur de l'image à 100% de la largeur du parent */
+        margin-right: 0;
+        margin-left: 0; /* Supprimer la marge entre l'image et le texte */
+    }
+    .team-member h2 {
+        font-size: 1.2em; /* Ajuster la taille de la police pour les titres des rubriques sur les petits écrans */
     }
 
-    .team-member img {
-        max-width: 75%; /* Ajuster la largeur de l'image à 100% de la largeur du parent */
-        margin-right: 5%;
-        margin-left: 5%; /* Supprimer la marge entre l'image et le texte */
+    .team-member ul {
+        font-size: 0.9em; /* Ajuster la taille de la police pour la liste des compétences sur les petits écrans */
     }
 }

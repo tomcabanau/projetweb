@@ -30,6 +30,8 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     font-family: 'Courier New', Courier, monospace;
+    padding: 0 20px;
+    border-radius: 10px;
 }
 
 .team-member {
@@ -39,11 +41,14 @@ section {
     margin: 10px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 
 .team-member img {
-    max-width: 150px;
-    margin-right: 20px;
+    max-width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 50%;
 }
 
 .team-member div {
@@ -52,20 +57,21 @@ section {
 
 /* Ajoutez des media queries pour le rendu responsive */
 
-@media screen and (max-width: 20000px) {
+@media screen and (max-width: 768px) {
     section {
-        flex-direction: column; /* Afficher les membres de l'équipe en colonne */
         align-items: center; /* Centrer les éléments */
     }
 
     .team-member {
-        width: 90%; /* Prendre toute la largeur de l'écran */
+        width: 100%; /* Prendre toute la largeur de l'écran */
         text-align: left;
+        margin: 10px;
+        padding: 20px;
     }
 
     .team-member img {
-        max-width: 100%; /* Ajuster la largeur de l'image à 100% de la largeur du parent */
-        margin-right: 5%; /* Supprimer la marge entre l'image et le texte */
-        margin-bottom: 10px; /* Ajouter une marge en bas pour l'espace */
+        max-width: 75%; /* Ajuster la largeur de l'image à 100% de la largeur du parent */
+        margin-right: 5%;
+        margin-left: 5%; /* Supprimer la marge entre l'image et le texte */
     }
 }

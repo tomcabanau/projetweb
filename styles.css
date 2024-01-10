@@ -525,3 +525,24 @@ section a {
         margin-bottom: 2%;
     }
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+}
+.footer-text {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Druzhok", sans-serif;
+}
+.white-link {
+    color: white;
+    text-decoration: underline;
+}

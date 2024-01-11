@@ -93,3 +93,28 @@ section {
         font-size: 0.9em; /* Ajuster la taille de la police pour la liste des compétences sur les petits écrans */
     }
 }
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Styles pour la section de particules en arrière-plan */
+.particles-section {
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+/* Styles pour les particules */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Ajustement de la position des particules */
+#particles-js.bottom-start {
+    top: calc(100% - 200px);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/

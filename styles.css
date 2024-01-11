@@ -159,8 +159,8 @@ h2 {
 /* Styles pour les particules */
 #particles-js {
     position: absolute;
-    width: 3000px;
-    height: 3000px;
+    width: 100%;
+    height: 500%;
     z-index: -1;
 }
 

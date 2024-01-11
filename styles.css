@@ -160,7 +160,7 @@ h2 {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 500%;
+    height: 1000%;
     z-index: -1;
 }
 

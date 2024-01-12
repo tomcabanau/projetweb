@@ -4,7 +4,7 @@ function navigateToCarPage(carId) {
     var carWidget = document.querySelector(`.car-widget[data-car-id="${carId}"]`);
     // Récupère l'attribut 'data-link' de l'élément du widget de voiture.
     var link = carWidget.getAttribute('data-link');
-    // Redirige la fenêtre vers le lien spécifié.
+    // Redirige la fenêtre vers le lien spécifié.'
     window.location.href = link;
 }
 

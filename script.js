@@ -1,3 +1,11 @@
+// Fonction executée lors de l'utilisation du clic droit.
+$(document).bind("contextmenu", function () {
+    // Si vous voulez ajouter un message d'alerte
+    alert('Merci de respecter le travail du webmaster en ne copiant pas le contenu sans autorisation');
+    // On indique au navigateur de ne pas réagir en cas de clic droit.
+    return false;
+});
+
 // Cette fonction prend un identifiant de voiture en paramètre et navigue vers la page de cette voiture.
 function navigateToCarPage(carId) {
     // Sélectionne l'élément du widget de voiture correspondant à l'identifiant de la voiture.
@@ -43,14 +51,6 @@ function highlightAndNavigate(carWidget) {
     // Fait défiler la page pour amener le widget en vue de manière fluide.
     carWidget.scrollIntoView({ behavior: 'smooth' });
 }
-
-// Fonction executée lors de l'utilisation du clic droit.
-$(document).bind("contextmenu",function() {
-    // Si vous voulez ajouter un message d'alerte
-    alert('Merci de respecter le travail du webmaster en ne copiant pas le contenu sans autorisation');
-    // On indique au navigateur de ne pas réagir en cas de clic droit.
-    return false;
-});
 
 // Cette partie du code est exécutée lorsque le document HTML est complètement chargé.
 document.addEventListener('DOMContentLoaded', function () {

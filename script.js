@@ -1,3 +1,10 @@
+// Fonction pour désactiver le clic droit avec un message d'alerte.
+function disableRightClick() {
+    $(document).bind("contextmenu", function () {
+        alert('Merci de respecter le travail du webmaster en ne copiant pas le contenu sans autorisation');
+        return false;
+    });
+}
 
 // Cette fonction prend un identifiant de voiture en paramètre et navigue vers la page de cette voiture.
 function navigateToCarPage(carId) {
@@ -122,4 +129,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ajoute une classe à un conteneur spécifié pour positionner les particules en bas de la page.
     document.getElementById('particles-js-container').classList.add('bottom-start');
+    disableRightClick();
 });
